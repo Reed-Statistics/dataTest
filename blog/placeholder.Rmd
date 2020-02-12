@@ -1,0 +1,28 @@
+---
+title: "Placeholder"
+author: 'Name:'
+date: "2/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warning=FALSE)
+```
+
+```{r, eval = FALSE}
+# Run once
+devtools::install()
+```
+
+
+
+```{r, eval=FALSE}
+library(dataTest)
+library(tidyverse)
+
+fremontBikes %>%
+  sample_n(1000) %>%
+ggplot(mapping = aes(x = date, y = fremont_bridge_total)) +
+  geom_point()
+```
+
